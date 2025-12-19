@@ -12,11 +12,12 @@ skills:
 main-image: /ros-3d-printer-ur.jpg
 
 ---
-## Overview
+# Overview
 The control system employs a modular, event-driven architecture consisting of four primary layers: G-code interpretation, trajectory planning, robot control, and hardware interface.
 
 {% include image-gallery.html images="software_stack.png" height="480" %}
 
+---
 The system architecture prioritises deterministic communication and minimal latency through several design principles:
 
 - **Asynchronous Processing**: Commands are processed in parallel across nodes to prevent blocking operations
@@ -24,27 +25,31 @@ The system architecture prioritises deterministic communication and minimal late
 - **Predictive Control**: Motion and extrusion speeds are calculated at every step using G-Code instructions to ensure robot and extruder synchronisation
 - **Real-time Feedback**: Continuous joint state monitoring at 500 Hz ensures accurate positioning and movement completion detection
 
-### System Demonstration
+---
+## System Demonstration
 {% include youtube-video.html id="WAxypnQUJU0" autoplay = "true" width= "720px" %}
 
 ---
-## Results
+# Results
 
-#### Benchy
+---
+## Benchy
 
 {% include image-gallery.html images="benchy.jpg" height="480" %}
 
-*UR10e Printer (left) vs Bambu Lab X1 Carbon (right)*
+UR10e Printer (left) vs Bambu Lab X1 Carbon (right)
 
-#### Vase Mode
+---
+## Vase Mode
 
 {% include image-gallery.html images="vase.jpg" height="480" %}
 
-#### Extra-Large Prints (exceeds print bed dimensions)
+---
+## Extra-Large Prints (exceeds print bed dimensions)
 
 {% include image-gallery.html images="xl.jpg" height="480" %}
 
 ---
-## Code Repository
+# Code Repository
 
 [GitHub](https://github.com/AbdulShahzeb/ros-3d-printer-ur)

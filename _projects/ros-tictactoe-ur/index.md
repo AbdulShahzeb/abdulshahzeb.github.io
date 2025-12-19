@@ -12,7 +12,7 @@ skills:
 main-image: /tictactoe.png
 
 ---
-## Overview
+# Overview
 This project provides a complete, open-source toolkit for playing tic-tac-toe with a UR5e robotic arm. The system demonstrates:
 
 - **Vision-based perception** using ArUco marker detection and colour segmentation
@@ -21,7 +21,8 @@ This project provides a complete, open-source toolkit for playing tic-tac-toe wi
 - **Closed-loop operation** with continuous visual feedback and adaptive gameplay
 - **Custom hardware integration** including a dual-marker end-effector and servo control
 
-### Robot Functionality
+---
+## Robot Functionality
 The UR5e manipulator, equipped with a custom dual-marker end-effector, autonomously plays tic-tac-toe by reacting to either physically drawn moves on a grid or mouse-selected moves on the UI. The system:
 
 1. **Perceives the game state** using an overhead RealSense camera to detect ArUco markers and colour-coded symbols
@@ -30,13 +31,16 @@ The UR5e manipulator, equipped with a custom dual-marker end-effector, autonomou
 4. **Monitors gameplay** through continuous vision feedback, detecting human moves and verifying robot actions
 5. **Adapts in real-time** to changing board states, maintaining closed-loop control throughout gameplay
 
-### System Demonstration
+---
+## System Demonstration
+
 {% include youtube-video.html id="hXMSvpA56x8" autoplay = "true" width= "720px" %}
 
 ---
-## Technical Components
+# Technical Components
 
-### Computer Vision
+---
+## Computer Vision
 
 - Computes the grid's center position and orientation using camera intrinsics and marker geometry
 - Uses HSV colour space thresholding to detect blue markers (X) and red markers (O) within adaptive circular regions
@@ -44,30 +48,29 @@ The UR5e manipulator, equipped with a custom dual-marker end-effector, autonomou
 
 {% include image-gallery.html images="cv.png" height="480" %}
 
-### End-Effector
-
+---
+## End-Effector
 The custom end-effector design prioritises simplicity in construction, featuring an entirely FDM 3D-printed servo housing that toggles between two pen holders to draw X's and O's.
 
 {% include image-gallery.html images="end_effector.jpg" height="480" %}
 
-### System Visualisation
-
+---
+## System Visualisation
 The system uses RViz as the primary visualisation tool, providing real-time feedback on robot state, perception data, and coordinate frames:
 
 - Robot Model & MoveIt Trajectory Planning
 - ArUco Marker and Cell State Overlays
 - TF Trees
 
-{% include image-gallery.html images="rviz.jpg" height="480" %}
+{% include image-gallery.html images="rviz.png" height="480" %}
 
-### Closed-Loop Operation
-
+---
+## Closed-Loop Operation
 The system implements closed-loop control through continuous vision-based state monitoring and adaptive decision-making:
 
 - Vision-Based State Feedback
 - Adaptive Game Flow
 
 ---
-## Code Repository
-
+# Code Repository
 [GitHub](https://github.com/AbdulShahzeb/ros-tictactoe-ur)

@@ -11,7 +11,7 @@ skills:
 main-image: /rps.jpg
 
 ---
-## Overview
+# Overview
 This system is built around a modular architecture of communicating ROS 2 nodes:
 
 - **Object Detection**: A vision node processes the overhead camera feed to detect the target object and continuously publishes its 2D pose.
@@ -21,6 +21,7 @@ This system is built around a modular architecture of communicating ROS 2 nodes:
 - **Robot Control**: A UR control node translates the desired Cartesian poses from the sequence into joint-space commands for the robot arm and provides continuous feedback on its movement status.
 - **Gripper Integration**: The sequence includes integrated *Contactile* gripper commands (`Open`, `Grip`, `Release`), which are published at the appropriate points in the trajectory.
 
+---
+# System Demonstration
 
-### System Demonstration
 {% include youtube-video.html id="1wjH_KKCkKA" autoplay = "true" width= "720px" %}

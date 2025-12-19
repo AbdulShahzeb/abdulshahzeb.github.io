@@ -11,7 +11,7 @@ skills:
 main-image: /turtlebot.png
 
 ---
-## Overview
+# Overview
 
 - Developed and implemented a wall-following algorithm on a TurtleBot3.
 - Integrated OpenCV with the TurtleBot3 camera node to detect and track color-coded objects in real-time, showcasing computer vision capabilities.
@@ -19,5 +19,7 @@ main-image: /turtlebot.png
 
 {% include image-gallery.html images="rviz.jpg" height="720" %}
 
-### System Demonstration
+---
+# System Demonstration
+
 {% include youtube-video.html id="D009bjO4PAM" autoplay = "true" width= "480px" %}

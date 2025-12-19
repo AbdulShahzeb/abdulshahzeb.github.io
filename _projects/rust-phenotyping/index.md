@@ -12,5 +12,6 @@ skills:
 main-image: /dfh.jpg
 
 ---
-### System Demonstration
+# System Demonstration
+
 {% include youtube-video.html id="xIW9c1_HQYI" autoplay = "true" width= "720px" %}
